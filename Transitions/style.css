@@ -1,0 +1,366 @@
+* {
+    background-color: lightgrey;
+}
+
+.containar {
+    /* border: 2px solid red; */
+    /* height: 800px; */
+    width: 100%;
+}
+
+body {
+    margin: 50px;
+    padding: 20px;
+
+}
+
+.child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    top: 10px;
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.name1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(75, 74, 74); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+}
+
+
+.subchild-1 {
+    border: 2px solid;
+    height: 300px;
+    width: 400px;
+    position: relative;
+    /* background-color: blueviolet; */
+    /* transition-property: background-color;
+    transition-duration: 1.5s;
+    transition-delay: 1.3s;
+    transition-timing-function: ease; */
+}
+
+.subchild-1~img1 {
+    display: block;
+    width: 100%;
+    transition: 1.3s;
+}
+
+
+/* .subchild-1 img {
+    display: block;
+}
+
+.img1:hover~.p {
+    display: block;
+} */
+
+.subchild-1>p {
+    font-size: 30px;
+    color: whitesmoke;
+    opacity: 0;
+
+}
+
+.subchild-1:hover>p {
+    opacity: 1;
+    transition: all 1.5s ease;
+    background-color: rgb(75, 74, 74);
+}
+
+
+/* .subchild-1:hover {
+    background-color: rgba(70, 65, 75, 0.616);
+    padding: 0px;
+} */
+
+.subchild-1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.subchild-2 {
+    border: 2px solid;
+    height: 300px;
+    width: 400px;
+    position: relative;
+
+}
+
+.name2 {
+    position: absolute;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: rgb(127, 119, 134); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subchild-2>p {
+    font-size: 30px;
+    color: whitesmoke;
+    opacity: 0;
+}
+
+.subchild-2:hover>p {
+    opacity: 1;
+    transition: all 1.5s ease;
+    background-color: rgb(75, 74, 74);
+}
+
+.subchild-3 {
+    border: 2px solid;
+    height: 300px;
+    width: 400px;
+    position: relative;
+}
+
+.name3 {
+    position: absolute;
+    /* background-color: rgb(91, 87, 87); */
+    color: whitesmoke;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subchild-3>p {
+    font-size: 30px;
+    color: whitesmoke;
+    opacity: 0;
+}
+
+.subchild-3:hover>p {
+    transition: all 1.5s ease;
+    opacity: 1;
+    background-color: rgb(75, 74, 74);
+}
+
+.subchild-3>img {
+    display: block;
+
+}
+
+.subchild-4 {
+    border: 2px solid;
+    height: 300px;
+    width: 400px;
+    position: relative;
+}
+
+.name4 {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: rgb(88, 75, 75); */
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subchild-4 img {
+    height: 100%;
+    width: 100%;
+}
+
+.subchild-4>p {
+    font-size: 30px;
+    opacity: 0;
+
+}
+
+.subchild-4:hover>p {
+    transition: all 1.5s ease;
+    opacity: 1;
+    background-color: rgb(75, 74, 74);
+}
+
+.child-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    top: 30px;
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 100%;
+}
+
+.subchild-5 img {
+    height: 100%;
+    width: 100%;
+}
+
+.subchild-5 {
+    border: 2px solid;
+    position: relative;
+}
+
+.name-5 {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subchild-5>p {
+    font-size: 30px;
+    opacity: 0;
+}
+
+.subchild-5:hover>p {
+    transition: all 1.5s ease;
+    background-color: rgb(57, 56, 56);
+    opacity: 1;
+}
+
+.subchild-5>img {
+    display: block;
+}
+
+.subchild-6 {
+    border: 2px solid;
+    position: relative;
+}
+
+.name-6 {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subchild-6>p {
+    font-size: 30px;
+    opacity: 0;
+}
+
+.subchild-6:hover>p {
+    transition: all 1.5s ease;
+    background-color: rgb(57, 56, 56);
+    opacity: 1;
+}
+
+.subchild-6>img {
+    display: block;
+}
+
+.subchild-7 {
+    border: 2px solid;
+    position: relative;
+}
+
+.name-7 {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subchild-7>p {
+    font-size: 20px;
+    opacity: 0;
+}
+
+.subchild-7:hover>p {
+    transition: all 1.5s ease;
+    background-color: rgb(57, 56, 56);
+    opacity: 1;
+}
+
+.subchild-7>img {
+    display: block;
+}
+
+.subchild-8 {
+    border: 2px solid;
+    position: relative;
+}
+
+.name-8 {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subchild-8>p {
+    font-size: 30px;
+    opacity: 0;
+}
+
+.subchild-8:hover>p {
+    transition: all 1.5s ease;
+    background-color: rgb(57, 56, 56);
+    opacity: 1;
+}
+
+.subchild-8>img {
+    display: block;
+}
+
+
+
+
+img {
+    width: 100%;
+}
