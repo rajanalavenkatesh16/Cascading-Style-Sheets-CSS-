@@ -1,0 +1,27 @@
+.container {
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+}
+
+.container>div {
+    border: 2px solid;
+    padding: 20px;
+    background-color: lightcoral;
+    color: black;
+
+}
+
+.A {
+    grid-row: 1/4;
+}
+
+.B {
+    grid-column: 2/4;
+}
+
+.F {
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
