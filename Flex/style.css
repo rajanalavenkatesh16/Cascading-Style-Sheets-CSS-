@@ -1,0 +1,43 @@
+.containar {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    background-color: black;
+    color: #ffffff;
+    justify-content: space-between;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+.child {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.subchild {
+    /* border: 2px solid red; */
+    padding-top: 15px;
+    padding-right: 50px;
+}
+
+i {
+    font: 50px;
+}
+
+.containar-1 {
+    /* border: 2px solid salmon; */
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
