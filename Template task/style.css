@@ -1,0 +1,253 @@
+/* * {
+    background-color: rgba(125, 117, 117, 0.142);
+} */
+
+.containar {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    /* border: 2px solid red; */
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    flex-direction: row;
+}
+
+#anchor {
+    background-color: black;
+    border: 2px red;
+    color: white;
+}
+
+.containar-1 {
+    position: relative;
+    width: 100%;
+    /* border: 2px solid red; */
+    /* z-index: -1; */
+}
+
+.cafeimage img {
+    height: 600px;
+    width: 100%;
+    /* display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px; */
+}
+
+h1 {
+    /* border: 2px solid red; */
+    display: flex;
+    position: absolute;
+    align-items: center;
+    color: whitesmoke;
+    z-index: 0;
+    top: 200px;
+    left: 650px;
+    padding: 50px;
+    font-size: 50px;
+    bottom: 300px;
+    margin: 0px;
+
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    /* border: 1px solid red; */
+    color: whitesmoke;
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    left: 600px;
+    padding: 50px;
+    font-size: 70px;
+    bottom: 50px;
+    margin: 0px;
+
+}
+
+h4 {
+    align-items: start;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+}
+
+h5 {
+    display: flex;
+    align-items: start;
+    /* background-color: black; */
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.containar-3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    /* margin-top: 30px;
+    /* height: 4000px; */
+    /* width: 100%;
+    padding: 30px; */
+    */
+}
+
+.about {
+    display: flex;
+    position: absolute;
+
+    background-color: black;
+    color: white;
+    margin: 20px 100px 10px 100px;
+    padding: 5px 50px 5px 50px;
+    */
+}
+
+.subchild-7 {
+    margin: 100px 400px 10px 400px;
+
+}
+
+.subchild-8 {
+    border: 5px solid rgba(14, 14, 14, 0.127);
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 5px;
+}
+
+.subchild-9 {
+    /* border: 2px solid red; */
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    /* border: 2px solid red; */
+    background-color: black;
+    color: white;
+    margin: 10px 200px 10px 200px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.subchild-10 {
+    display: flex;
+    /* border: 2px solid red; */
+    position: relative;
+    align-content: center;
+}
+
+.eat {
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.107);
+    background-color: rgba(105, 109, 112, 0.423);
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.drink {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(104, 109, 114, 0.308);
+    border: 2px solid rgba(24, 23, 23, 0.093);
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.subchild-11 {
+    border: 2px solid rgb(30, 29, 29);
+    background-color: whitesmoke;
+    color: black;
+    height: 600px;
+}
+
+.subchild-12 {
+    /* border: 2px solid black; */
+    margin-top: 20px;
+}
+
+.subchild-13 {
+    /* border: 2px solid red; */
+    /* height: 100px; */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 10px 200px 10px 200px;
+    padding-left: 100px;
+}
+
+.subchild-14 {
+    padding-top: 10px;
+    /* border: 2px solid red;
+    height: 600px; */
+}
+
+.subchild-15 {
+    /* border: 2px solid lightgrey; */
+
+
+}
+
+input {
+    height: 50px;
+    width: 200px;
+}
+
+#button {
+    background-color: rgba(82, 80, 80, 0.364);
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* margin: 20px 600px 30px 700px; */
+    background-color: rgba(108, 101, 101, 0.078);
+    color: black;
+}
+
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
