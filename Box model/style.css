@@ -1,0 +1,37 @@
+.container{
+     /* border: 2px solid red;  */
+    height: 700px;
+    margin:80px;
+    padding-left: 80px;
+}
+.container-1{
+display: inline-block;
+width: 300px;
+padding-right: 10px;
+/* height: 600px;
+border: 2px solid green; */
+}
+.container-2{
+display: inline-block;
+width: 300px;
+padding-right: 10px;
+/* height: 600px;
+border: 2px solid green; */
+}
+.container-3{
+display: inline-block;
+width: 300px;
+padding-right: 10px;
+/* height: 600px;
+border: 2px solid green; */
+}
+.container-4{
+display: inline-block;
+width: 300px;
+padding-right: 10px;
+/* height: 600px;
+border: 2px solid green; */
+}
+img{
+    width: 100%;
+}
