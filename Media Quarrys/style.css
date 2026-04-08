@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgba(104, 101, 101, 0.078);
+}
+
+.container {
+    border: 2pxx solid;
+    background-color: rgba(44, 44, 44, 0.636);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border-radius: 50px; */
+    /* font-size: 2rem; */
+}
+
+#checkbox {
+    display: none;
+}
+
+.container>.child {
+    background-color: rgba(0, 0, 0, 0.33);
+    color: white;
+    /* background-color: rgba(94, 94, 94, 0.79); */
+    font-size: 1rem;
+}
+
+i {
+    font-size: 2rem;
+    display: none;
+}
+
+i2 {
+    font-size: 2rem;
+    /* display: none; */
+}
+
+#login {
+    display: none;
+}
+
+img {
+    width: 5rem;
+
+}
+
+@media screen and (width <=600px) {
+    i {
+        display: block;
+    }
+
+    i2 {
+        display: block;
+    }
+
+    .child {
+        display: none;
+    }
+
+    #checkbox:checked~.child {
+        display: block;
+    }
+
+    #login {
+        padding: 0px;
+        margin: 0px;
+        font-size: 1rem;
+        /* border: 2px solid rgba(85, 75, 75, 0.353); */
+        background-color: whitesmoke;
+        /* color: whitesmoke; */
+        border-radius: 50px;
+        width: 100px;
+        display: block;
+    }
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid; */
+    /* width: 100%; */
+}
+
+#img1 {
+    height: 600px;
+    width: 100%;
+}
