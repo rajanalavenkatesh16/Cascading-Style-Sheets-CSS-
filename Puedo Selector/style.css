@@ -1,8 +1,10 @@
 * {
     background-color: lightgrey;
+
 }
 
 .container {
+    /* display: flex; */
     border: 2px solid;
     height: 700px;
     width: 700px;
@@ -71,9 +73,10 @@ body {
     position: absolute;
     top: 60px;
     left: 60px;
-    right: 60px;
+    right: 55px;
     bottom: 60px;
     background-color: rgb(107, 147, 187);
+    display: flex;
     flex-wrap: wrap;
 }
 
