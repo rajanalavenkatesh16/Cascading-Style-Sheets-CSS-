@@ -17,7 +17,7 @@ body {
     align-items: center;
     text-align: end;
     opacity: 1;
-    z-index: 1;
+    z-index: 1000;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -27,20 +27,49 @@ body {
     gap: 30px;
     flex-wrap: wrap;
     font-size: 2rem;
+
 }
 
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
 
 .headerchild {
-    /* display: flex;
-    align-items: end; */
+    display: flex;
+    align-items: end;
+    gap: 10px;
     font-size: 20px;
+    transition: all 2s ease-in;
 }
 
-.headerchild:hover {
-    transition: all 1s ease-in;
+.hover:hover {
+    background-color: lightgrey;
+}
+
+.header-2:hover {
+    background-color: lightgray;
     border-radius: 30%;
     /* background-color: whitesmoke; */
 }
+
+.header-2 {
+
+    display: flex;
+    gap: 20px;
+}
+
+
+/* .menuicon {
+    position: fixed;
+} */
 
 #checkbox {
     display: none;
@@ -68,19 +97,61 @@ a {
 }
 
 .container {
-    margin: 0px;
-    padding: 0px;
-    /* border: 2px solid red; */
-    background: url(./chicken-biryani-served-with-side-crispy-papada_1169880-244535.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    width: 100%;
-    opacity: 90%;
-    background-repeat: no-repeat;
+    height: 100vh;
+    background: url("./chicken-biryani-served-with-side-crispy-papada_1169880-244535.jpg") no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     position: relative;
+
+
 }
 
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* perfect center */
+    text-align: center;
+    color: white;
+}
+
+
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+    /* dark overlay */
+}
+
+.containerchild,
+#dishes1 {
+    position: relative;
+    z-index: 1;
+}
 
 
 .containerchild {
@@ -99,19 +170,6 @@ a {
     display: none;
     position: absolute;
 }
-
-/* 
-#menubutton {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    background-color: #222;
-    gap: 10px;
-    color: white;
-    width: 100%;
-    padding: 10px;
-} */
-
 
 .container-1 {
     padding-top: 20px;
@@ -148,8 +206,7 @@ a {
 
 .fooddishes {
     /* padding: 50px; */
-    display: flex;
-    justify-content: space-around;
+    gap: 20px;
     padding-bottom: 50px;
     /* animation: b 2s ease-in; */
 }
@@ -158,15 +215,6 @@ a {
     animation: c 2s ease-in;
 }
 
-/* @keyframes c {
-    0% {
-        transform: translateX(-100px);
-    }
-
-    100% {
-        transform: translateX(0px)
-    }
-} */
 @keyframes c {
     from {
         transform: translateX(600px);
@@ -205,44 +253,15 @@ a {
     }
 }
 
-/* @keyframes a {
-    0% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-    }
-}
-
-@keyframes a {
-
-    0% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-    }
-} */
-
 
 h5 {
     /* background-color: brown; */
     color: white;
     opacity: 1;
-    position: absolute;
     font-family: "Cormorant Garamond";
     font-style: italic;
     color: yellow;
-    left: 650px;
-    top: 290px;
+    top: 30px;
     font-size: 50px;
     opacity: 1;
     animation: fadeIn 3s ease-in;
@@ -251,9 +270,6 @@ h5 {
 #Quality {
     /* background-color: brown; */
     color: white;
-    left: 700px;
-    top: 350px;
-    position: absolute;
     font-family: "Cormorant Garamond";
     font-style: italic;
     opacity: 1;
@@ -277,7 +293,7 @@ h5 {
     position: absolute;
     font-family: "Montserrat";
     left: 550px;
-    top: 400px;
+    top: 450px;
     z-index: 1;
     font-family: "Cormorant Garamond";
     font-style: italic;
@@ -320,7 +336,7 @@ h5 {
     position: absolute;
     font-family: "Montserrat";
     left: 580px;
-    top: 450px;
+    top: 500px;
     z-index: 1;
     font-family: "Cormorant Garamond";
     font-style: italic;
@@ -414,7 +430,7 @@ body {
 
 .container-3 {
     margin: 0px;
-    padding: 0px;
+    padding: 40px 20px;
     /* border: 2px solid red; */
     width: 100%;
     display: flex;
@@ -466,7 +482,7 @@ body {
     /* padding: 20px; */
     /* border: 2px solid red; */
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -484,24 +500,6 @@ body {
     }
 }
 
-/* #l1 {
-    padding: 30px;
-    margin: 30px;
-}
-
-#l2 {
-    padding: 30px;
-    margin: 30px;
-}
-
-#About {
-    padding: 30px;
-    margin: 30px;
-}
-
-.container-3>img {
-    border-radius: 50%;
-} */
 .container-5 {
     /* border: 2px solid red; */
     /* padding: 20px; */
@@ -564,6 +562,12 @@ body {
 .items-12 {
     display: flex;
     justify-content: center;
+    transition: all 1s ease-in;
+}
+
+.items-12:hover {
+    background-color: black;
+
 }
 
 img {
@@ -630,7 +634,8 @@ img {
 }
 
 button:hover {
-    background-color: lightslategray;
+    background-color: black;
+    color: white;
 }
 
 .form {
@@ -686,6 +691,25 @@ button:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(300px);
     gap: 100px;
+}
+
+/* #checkbox:checked~.headerchild {
+    display: flex;
+    flex-direction: column;
+    background: black;
+color: white;
+position: absolute;
+top: 60px;
+left: 0;
+width: 100%;
+} */
+
+
+
+/* menu icon */
+.menu-icon {
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .name {
@@ -759,7 +783,8 @@ input:focus {
 }
 
 .location:hover {
-    background-color: #646464;
+    background-color: black;
+    color: white;
 }
 
 @keyframes map {
@@ -772,6 +797,12 @@ input:focus {
     }
 }
 
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
 .footer {
     background-color: black;
@@ -784,6 +815,7 @@ input:focus {
     padding: 0;
     margin: 0px;
     position: relative;
+    transition: all 1s ease-in;
 }
 
 /* .footerchild {
@@ -793,29 +825,39 @@ input:focus {
     color: lightcoral;
 }
 
+.footeritems-2 {
+    font-size: 1.4rem;
+}
+
 .footers1 {
+    font-size: 2rem;
     padding-left: 30px;
 }
 
 .footeritems-3 {
+    font-size: 2rem;
     padding-left: 30px;
 }
 
 .footeritems-4 {
+    font-size: 2rem;
     padding-left: 30px;
 }
 
 .footeritems-5 {
+    font-size: 2rem;
     padding-left: 30px;
 }
 
 .footeritems-6 {
+    font-size: 2rem;
     padding-left: 30px;
 }
 
 .top {
     color: white;
-    align-self: flex-end;
+    padding-left: 30px;
+    align-self: flex-center;
     font-size: 2rem;
 
 }
@@ -828,98 +870,95 @@ input:focus {
     left: 0px;
 }
 
-.footer a:hover {
-    transition: all 1s ease-in;
-    background-color: lightgrey;
-
+html {
+    scroll-behavior: smooth;
 }
 
-/* .footeritems-1 {
-    width: 30%;
-    position: absolute;
-} */
+.footer a:hover {
+    background-color: lightgray;
+    color: black;
+}
 
-/* .footeritems-2 {}
+#checkbox {
+    display: none;
+}
 
-.footeritems-3 {
-    align-content: end;
-} */
+.headerchild {
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 600px) {
+
+    /* ===== HEADER ===== */
+    .header {
+        background-color: black;
+        color: white;
+        flex-direction: column;
+        align-items: start;
+        height: auto;
+    }
+
+    /* .header-1 {
+        left: 0%;
+    } */
+
     .bi-list {
         display: block;
+
     }
 
     .headerchild {
         display: none;
-
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        /* background: black;
+        color: white; */
+        padding: 20px;
     }
-
-    .header-1 {
-        display: flex;
-        justify-content: start;
-    }
-
 
     #checkbox:checked~.headerchild {
         display: flex;
-        justify-content: end;
+    }
+
+    .menu-icon {
         display: block;
-        background-color: black;
-        color: white;
+        font-size: 30px;
+        cursor: pointer;
     }
 
-    .container {
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-
+    /* ===== HERO TEXT FIX (IMPORTANT) ===== */
+    h5,
+    #Quality,
+    #dishes,
+    #dishes1 {
+        position: static;
+        /* REMOVE absolute */
+        text-align: center;
     }
 
-    .container-1 {
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        width: 100%;
+    #dishes,
+    #dishes1 {
+        font-size: 28px;
     }
 
     h5 {
-        width: 50%;
-        left: 200px;
+        font-size: 18px;
     }
 
     #Quality {
-        left: 200px;
+        font-size: 14px;
     }
 
-    #dishes {
-        left: 200px;
-    }
-
-    #dishes1 {
-        left: 200px;
-    }
-
-    .menubotton {
-        background-color: black;
-        color: white;
-    }
-
-}
-
-.fooddishes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.dishes {
-    width: 300px;
-    margin: 10px;
-}
-
-@media (max-width: 600px) {
-
+    /* ===== LAYOUT FIX ===== */
     .fooddishes {
         flex-direction: column;
         align-items: center;
@@ -934,33 +973,37 @@ input:focus {
         flex-direction: column;
     }
 
-    .menu {
-        width: 95%;
-        left: 2.5%;
-    }
-
+    /* ===== WIDTH FIX ===== */
+    .menu,
     .form {
         width: 95%;
-        left: 2.5%;
+        left: 0;
+        right: 0;
     }
 
     .name {
         width: 100%;
     }
 
+    /* ===== CONTACT ===== */
+    .container-9 {
+        flex-direction: column;
+    }
+
+    /* ===== IMAGES ===== */
     img {
         height: auto;
     }
 }
 
-@media (max-width: 600px) {
-    .header {
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: flex-center;
-        /* Align to left */
-        height: auto;
-        /* Adjust height automatically */
-        padding: 10px;
-    }
+
+.fooddishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dishes {
+    width: 300px;
+    margin: 10px;
 }
